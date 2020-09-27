@@ -35,9 +35,10 @@ export default function RenderMiddlePanel(props) {
     }
     
     return (
-        <>
+    <>  
             <div className='middle-panel'>
-                <div>
+            <div style={{textAlign:"center",padding:10}}>{actionID}</div>
+                <div style={{padding:10}}>
                     <button onClick={() => setDisplayData(props.content.filter(ele => ele.flag))}>Show Flagged</button>
                     <button onClick={() => setDisplayData(props.content.filter(ele => !ele.flag))}>Show UnFlagged</button>
                     <button onClick={() => setDisplayData(props.content)}>Show All</button>

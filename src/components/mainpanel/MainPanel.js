@@ -18,7 +18,7 @@ export default function Mainpanel() {
             case 'deletedItems' :
             return <Delete/>
             default :
-            return <Inbox/>
+            return <div>custom Folder</div>
         }
     }
     return (
